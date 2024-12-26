@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      tailwindcss-motion:
+        specifier: ^1.0.0
+        version: 1.0.0(tailwindcss@3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2)))
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: '1'
@@ -45,6 +48,9 @@ importers:
       postcss:
         specifier: ^8
         version: 8.4.49
+      prettier-plugin-tailwind:
+        specifier: ^2.2.12
+        version: 2.2.12(prettier@2.8.8)(tailwindcss@3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2)))
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2))
@@ -2385,6 +2391,17 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prettier-plugin-tailwind@2.2.12:
+    resolution: {integrity: sha512-2SvZxpsYme0g5MrxGsKM43rx28f9AVlJrbwMnx4a03svCfsHwVGtcN6oN1YlClnEwZbquu3IhVAMcawEMKTjuA==}
+    peerDependencies:
+      prettier: ^2.0.0
+      tailwindcss: '*'
+
+  prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+
   pretty-ms@7.0.1:
     resolution: {integrity: sha512-973driJZvxiGOQ5ONsFhOF/DtzPMOMtgC11kCpUrPGMTgqp2q/1gwzCquocrN33is0VZ5GFHXZYMM9l6h67v2Q==}
     engines: {node: '>=10'}
@@ -2708,6 +2725,14 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  tailwind-classes-sorter@0.2.5:
+    resolution: {integrity: sha512-7S0AaDitt+Fjy9m3v0GrQ/KZrCswNDD25SSXX9U/HIB5h9lk0ImSkq/VVcnzu78cRQxR0fFfvHYFdfcqN3dCGA==}
+
+  tailwindcss-motion@1.0.0:
+    resolution: {integrity: sha512-Bc8XJxiSGjup0NHsph4OBGXXFfmbInFUhvVVluKPScQD1R2kDQTZIODqumsI/lONryeTpDdKzwuuw1a99Z38bQ==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -5386,6 +5411,14 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
+  prettier-plugin-tailwind@2.2.12(prettier@2.8.8)(tailwindcss@3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2))):
+    dependencies:
+      prettier: 2.8.8
+      tailwind-classes-sorter: 0.2.5
+      tailwindcss: 3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2))
+
+  prettier@2.8.8: {}
+
   pretty-ms@7.0.1:
     dependencies:
       parse-ms: 2.1.0
@@ -5765,6 +5798,14 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-classes-sorter@0.2.5:
+    dependencies:
+      find-up: 5.0.0
+
+  tailwindcss-motion@1.0.0(tailwindcss@3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2))):
+    dependencies:
+      tailwindcss: 3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2))
 
   tailwindcss@3.4.17(ts-node@10.9.1(@types/node@20.17.10)(typescript@5.7.2)):
     dependencies:
